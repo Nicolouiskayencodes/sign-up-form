@@ -35,9 +35,9 @@ body{
 }
 /*left*/
 .left-section {
-  background: no-repeat center/120% url(images/background.jpg);
+  background: no-repeat center/100% url(images/background.jpg);
   height: 100vh;
-  width: 30%;
+  width: 40%;
   position: relative;
 }
 .logo-banner {
@@ -65,7 +65,54 @@ body{
   left: 0;
   right: 0;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .credit a {
   color: white;
 }
+/*right*/
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(240, 240, 240);
+  width: 60%;
+}
+.header,
+.legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+.header-text,
+.header-foot {
+  margin: 3rem
+}
+
+.form {
+  background-color: white;
+  box-shadow: 0 0.5em 0.5em gray;
+  margin-bottom: 3rem;
+}
+
+.legend {
+  margin: 1rem;
+  margin-bottom: 0;
+}
+.form-row {
+  display: flex;
+  
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+label {
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(60, 60, 60);
+}
+
