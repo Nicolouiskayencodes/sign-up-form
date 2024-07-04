@@ -135,11 +135,11 @@ input:focus {
   box-shadow: 2px 2px 2px lightgray;
 }
 
-input:invalid {
+input:user-invalid {
   border-color: rgb(226, 2, 2);
 }
 
-#password:invalid + span::after {
+#password:user-invalid + span::after {
 content: "*Passwords do no match";
 color: rgb(226, 2, 2);
 font-size: 10px;
@@ -162,11 +162,13 @@ font-size: 10px;
 .submit:hover {
   background-color: #647b50;
   border-color: #647b50;
+  cursor: pointer;
 }
 .submit:active {
   background-color: #4c5c3e;
   border-color: #4c5c3e;
   border-style: inset;
+  cursor: pointer;
 }
 
 .already {
@@ -176,4 +178,5 @@ font-size: 10px;
 }
 .already a {
   color: #596D48;
+  cursor: pointer;
 }
