@@ -96,8 +96,7 @@ body{
 }
 
 .legend {
-  margin: 1rem;
-  margin-bottom: 0;
+  margin: 1.5rem;
 }
 .form-row {
   display: flex;
@@ -107,7 +106,10 @@ body{
 .field {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1.5rem;
+  margin-right: 2rem;
+  margin-top: 0;
+  width: 40%;
 }
 
 label {
@@ -116,3 +118,25 @@ label {
   color: rgb(60, 60, 60);
 }
 
+input {
+  border: #E5E7EB solid;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+  padding: 0.2rem;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+input:invalid {
+  border-color: rgb(226, 2, 2);
+}
+
+#password:invalid + span::after {
+content: "*Passwords do no match";
+color: rgb(226, 2, 2);
+font-size: 10px;
+}
